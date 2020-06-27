@@ -6,24 +6,24 @@ const Footer = () => {
     <footer>
       <section>
         <div className="address">
-          <h3>WHERE ARE WE?</h3>
-          <span>65 Park Row</span>
-          <span>Edinburgh, EH1 4PE</span>
+          <h3>DONDE</h3>
+          <span>65 Avenida bella</span>
+          <span>Benicarlo, 24 003</span>
         </div>
         <div className="hours">
-          <h3>HOURS</h3>
-          <span>Weekdays / 8-5</span>
-          <span>Weekdays / 10-5</span>
+          <h3>HORARIOS</h3>
+          <span>mié - jue - vie / 11h-15h</span>
+          <span>sab - dom / 10h - 16h</span>
         </div>
         <div className="contact">
-          <h3>CONTACT</h3>
-          <span>01632 960966</span>
-          <span>@yourSocialName</span>
+          <h3>CONTACTO</h3>
+          <span>07 30 12 82 24</span>
+          <span>@ElGustoAzador</span>
         </div>
       </section>
-      <p>Built by
+      {/* <p>Built by
         <a href="https://crollacreations.com" target="_blank" rel="noopener noreferrer">crollacreations</a>
-      </p>
+      </p> */}
     </footer>
   )
 }

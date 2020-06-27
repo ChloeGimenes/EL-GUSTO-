@@ -4,11 +4,12 @@ if (process.env.NODE_ENV !== 'production') {
   dotenv.config()
 }
 
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Cafe`,
+    title: `EL GUSTO`,
     description: `  `,
-    author: `Cristiano Crolla`,
+    author: ``,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -44,7 +45,7 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram`,
       options: {
-        username: `kelvinpocketcafe`, // Your Instagram
+        username: `rotisserieamsterdam`, // Your Instagram
       },
     },
     {

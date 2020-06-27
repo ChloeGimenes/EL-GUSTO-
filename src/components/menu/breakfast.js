@@ -7,7 +7,7 @@ const Breakfast = () => {
     allContentfulMenuItem(
       filter: {
         category: {
-          title: {eq: "Breakfast"}
+          title: {eq: "Menus"}
         }
       }
     ) {
@@ -28,7 +28,7 @@ const Breakfast = () => {
   const items = data.allContentfulMenuItem.edges;
   return (
     <div>
-      <p className="sample">SAMPLE MENU</p>
+      <p className="sample"></p>
       <ul className="menu-items-grid">
         {
           items.map(({ node }) => {

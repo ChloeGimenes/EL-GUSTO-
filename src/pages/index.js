@@ -15,16 +15,16 @@ return (
   <Layout>
     <SEO title="Home" />
     <section className="hero">
-      <Img fluid={data.coffeeShop.childImageSharp.fluid} className="hero-image"/>
+      <Img fluid={data.devanture2.childImageSharp.fluid} className="hero-image"/>
     </section>
     <section className="container">
       <span className="description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </span>
       <div className="gallery-grid">
-        <Img fluid={data.latte.childImageSharp.fluid} className="gallery-img1"/>
-        <Img fluid={data.coffeeBags.childImageSharp.fluid} className="gallery-img2"/>
-        <Img fluid={data.coffeePortrait.childImageSharp.fluid} className="gallery-img3"/>
+        <Img fluid={data.roasting.childImageSharp.fluid} className="gallery-img1"/>
+        <Img fluid={data.potatoe.childImageSharp.fluid} className="gallery-img2"/>
+        <Img fluid={data.man.childImageSharp.fluid} className="gallery-img3"/>
       </div>
       <div className="about-grid">
         <h2>WE'RE CRAZY ABOUT COFFEE</h2>
@@ -38,9 +38,9 @@ return (
     </section>
     {typeof window !== 'undefined' &&
       <LeafletMap
-        position={[55.952103, -3.196175]} // Your Coordinates
+        position={[40.420809, 0.424931]} // Your Coordinates
         zoom={18} // Zoom Level
-        markerText={"Local Cafe, 65 Park Row"} // Icon text
+        markerText={"El Gusto, 31 avenida pollo"} // Icon text
       />
     }
     <Footer />
@@ -60,16 +60,16 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
-    coffeeShop: file(relativePath: { eq: "coffee-shop-exterior.jpg" }) {
+    devanture2: file(relativePath: { eq: "devanture2.png" }) {
       ...fluidImage
     }
-    coffeePortrait: file(relativePath: { eq: "coffee-portrait.jpg" }) {
+    man: file(relativePath: { eq: "man.png" }) {
       ...fluidImage
     }
-    latte: file(relativePath: { eq: "latte.jpg" }) {
+    roasting: file(relativePath: { eq: "roasting.png" }) {
       ...fluidImage
     }
-    coffeeBags: file(relativePath: { eq: "coffee-bags.jpg" }) {
+    potatoe: file(relativePath: { eq: "potatoe.jpg" }) {
       ...fluidImage
     }
   }

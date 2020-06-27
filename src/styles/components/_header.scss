@@ -1,9 +1,9 @@
 header {
   position: fixed;
   z-index: 10;
-  height: 50px;
+  height: 100px;
   width: 100%;
-  background-color: $green;
+  background-color: $blue;
   color: #fff;
   display: flex;
   align-items: center;
@@ -12,5 +12,14 @@ header {
   
   span {
     font-size: $ms-size;
+    color: rgb(231, 231, 231);
+    margin-right: 3%;
+  }
+
+  #siteTitle {
+    font-weight: 600;
+    font-size: 45px;
+    margin-left: 3%;
+
   }
 }
