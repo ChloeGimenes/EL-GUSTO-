@@ -1,5 +1,10 @@
 .menu {
 
+  .logo-and-title {
+    display: flex;
+    flex-direction: row;
+  }
+
   .menu-headers {
     display: flex;
     list-style-type: none;

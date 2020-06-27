@@ -19,7 +19,7 @@ return (
     </section>
     <section className="container">
       <span className="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        El mejor pollo asado para llevar !
       </span>
       <div className="gallery-grid">
         <Img fluid={data.roasting.childImageSharp.fluid} className="gallery-img1"/>
