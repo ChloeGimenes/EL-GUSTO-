@@ -3,6 +3,7 @@
   .logo-and-title {
     display: flex;
     flex-direction: row;
+    margin-bottom: 5%;
   }
 
   .menu-headers {
@@ -35,6 +36,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     margin: 0;
+    border: 5px dotted rgb(29, 29, 29);
+    padding: 5%;
     @media screen and (min-width:640px) {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;

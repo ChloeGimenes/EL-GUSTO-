@@ -8,6 +8,8 @@ import Menu from '../components/menu/menu'
 import Instagram from '../components/instagram'
 import LeafletMap from '../components/leafletMap'
 import Footer from '../components/footer'
+import "react-scroll-to-top/lib/index.css"
+import ScrollToTop from "react-scroll-to-top";
 
 const IndexPage = ({data}) => {
 
@@ -17,6 +19,7 @@ return (
     <section className="hero">
       <Img fluid={data.devanture2.childImageSharp.fluid} className="hero-image"/>
     </section>
+    <ScrollToTop smooth="true"/>
     <section className="container">
       <span className="description">
         El mejor pollo asado para llevar !
@@ -27,7 +30,7 @@ return (
         <Img fluid={data.man.childImageSharp.fluid} className="gallery-img3"/>
       </div>
       <div className="about-grid">
-        <h2>WE'RE CRAZY ABOUT COFFEE</h2>
+        <h2>LO MAS QUE ME IMPORTA ES EL GUSTO</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </section>

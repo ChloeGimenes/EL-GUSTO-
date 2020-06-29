@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
 main {
   background-color: $background;
 }
@@ -30,8 +33,9 @@ h2 {
 
   .description{
     text-align: center;
-    font-size: $ms-size;
+    font-size: 45px;
     padding: 80px 20px;
+    font-family: 'Lobster', cursive;
     @media screen and (min-width: 768px) {
       padding: 100px 120px;
     }

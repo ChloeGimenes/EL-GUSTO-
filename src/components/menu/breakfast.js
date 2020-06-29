@@ -35,7 +35,7 @@ const Breakfast = () => {
             return (
               <li key={node.id} className="menu-item">
                 <h3>{node.title}</h3>
-                <span>£{node.price}</span>
+                <span>€{node.price}</span>
               </li>
             )
           })

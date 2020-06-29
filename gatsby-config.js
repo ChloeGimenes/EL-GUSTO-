@@ -7,7 +7,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = {
   siteMetadata: {
-    title: `EL GUSTO`,
+    title: `El Gusto`,
     description: `  `,
     author: ``,
   },

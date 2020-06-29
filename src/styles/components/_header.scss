@@ -16,10 +16,26 @@ header {
     margin-right: 3%;
   }
 
-  #siteTitle {
-    font-weight: 600;
-    font-size: 45px;
+  .siteTitle {
+    font-weight: 400;
+    font-size: 50px;
     margin-left: 3%;
+    font-family: 'Lobster', cursive;
+    color: #e9ba69;
+
+  }
+
+  #subTitle {
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+  .title-header {
+display: flex;
+flex-direction: column;
+align-items: center;
 
   }
 }
