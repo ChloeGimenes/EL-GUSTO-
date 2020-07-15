@@ -42,7 +42,7 @@ return (
     {typeof window !== 'undefined' &&
       <LeafletMap
         position={[40.420809, 0.424931]} // Your Coordinates
-        zoom={18} // Zoom Level
+        zoom={15} // Zoom Level
         markerText={"El Gusto, 31 avenida pollo"} // Icon text
       />
     }

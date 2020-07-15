@@ -1,13 +1,27 @@
-const dotenv = require('dotenv')
+// const dotenv = require('dotenv')
 
-if (process.env.NODE_ENV !== 'production') {
-  dotenv.config()
-}
+// if (process.env.NODE_ENV !== 'production') {
+//   dotenv.config()
+// }
+
+// require("dotenv").config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// })
+
+
+activeEnv =
+  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development"
+
+console.log('Using environment config: ${activeEnv}')
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 
 module.exports = {
   siteMetadata: {
-    title: `El Gusto`,
+    title: `Al Gusto`,
     description: `  `,
     author: ``,
   },
@@ -38,8 +52,9 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: process.env.CONTENTFUL_SPACEID,
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        forceFullSync: true,
       },
     },
     {
@@ -59,7 +74,16 @@ module.exports = {
       options: {
         linkStyles: true // (default: true) Enable/disable loading stylesheets via CDN
       }
-    }
+    },
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        forceFullSync: true,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

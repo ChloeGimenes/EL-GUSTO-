@@ -1,4 +1,8 @@
+
 .menu {
+
+  // background-image: url(../../images/kraft2.jpg);
+
 
   .logo-and-title {
     display: flex;
@@ -6,6 +10,9 @@
     margin-bottom: 5%;
   }
 
+  .menu-header:visited {
+    font-weight: bold;
+  }
   .menu-headers {
     display: flex;
     list-style-type: none;
