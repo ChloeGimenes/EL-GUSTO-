@@ -69,7 +69,7 @@ export const pageQuery = graphql`
     man: file(relativePath: { eq: "man.png" }) {
       ...fluidImage
     }
-    roasting: file(relativePath: { eq: "roasting.png" }) {
+    roasting: file(relativePath: { eq: "roasting3.png" }) {
       ...fluidImage
     }
     potatoe: file(relativePath: { eq: "potatoe.jpg" }) {
