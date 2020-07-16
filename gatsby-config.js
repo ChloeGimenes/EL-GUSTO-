@@ -60,8 +60,8 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram`,
       options: {
-        type: `user-profile`,
-        username: `rotisserieamsterdam`, // Your Instagram
+        // type: `user-profile`,
+        username: `1234567`, // Your Instagram
       },
     },
     {
