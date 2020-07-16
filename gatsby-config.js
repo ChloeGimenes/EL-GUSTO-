@@ -61,7 +61,7 @@ module.exports = {
       resolve: `gatsby-source-instagram`,
       options: {
         // type: `user-profile`,
-        username: `1234567`, // Your Instagram
+        username: `21730493`, // Your Instagram
       },
     },
     {
