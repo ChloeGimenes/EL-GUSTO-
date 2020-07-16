@@ -22,6 +22,7 @@ header {
     margin-left: 3%;
     font-family: 'Lobster', cursive;
     color: #e9ba69;
+   
 
   }
 
@@ -46,9 +47,11 @@ header {
     
 
     .siteTitle {
-      width: 70%;
+      width: 100%;
       font-size: 39px;
       text-align: center;
+      margin-top: 4%;
+
 
       #subTitle {
         font-size: 13px;
@@ -57,7 +60,7 @@ header {
     }
 
     #header-infos {
-      font-size: 14px;
+      font-size: 15px;
       text-align: right;;
     }
   
